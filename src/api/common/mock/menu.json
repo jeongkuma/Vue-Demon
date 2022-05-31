@@ -1,0 +1,452 @@
+[
+  {
+    "href": "/sample",
+    "menu_id": "sample",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 0,
+    "title": "샘플",
+    "title_eng": "sample"
+  },
+  {
+    "href": "/dashboard",
+    "menu_id": "dashboard",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 0,
+    "title": "대시보드",
+    "title_eng": "Dashboard"
+  },
+  {
+    "href": "/dashboard/dashboard",
+    "menu_id": "dashboard_sub",
+    "prnt_menu_id": "dashboard",
+    "menulevel": 2,
+    "sort": 0,
+    "title": "대시보드",
+    "title_eng": "Dashboard"
+  },
+  {
+    "href": "/location",
+    "menu_id": "location",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 1,
+    "title": "위치관제",
+    "title_eng": "Location"
+  },
+  {
+    "href": "/equipment",
+    "menu_id": "MG0003",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 2,
+    "title": "장비관리",
+    "title_eng": "Device Management"
+  },
+  {
+    "href": "/equipment/statusEquip",
+    "menu_id": "M0003",
+    "prnt_menu_id": "MG0003",
+    "menulevel": 2,
+    "sort": 0,
+    "title": "장비현황",
+    "title_eng": "Device Registration Management"
+  },
+  {
+    "href": "/equipment/statusActuator",
+    "menu_id": "M0004",
+    "prnt_menu_id": "MG0003",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "장비제어",
+    "title_eng": "Device Control Management"
+  },
+  {
+    "href": "/detection/",
+    "menu_id": "MG1004",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 3,
+    "title": "장애관리",
+    "title_eng": "Device Management"
+  },
+  {
+    "href": "/detection/detectionReport",
+    "menu_id": "M100001",
+    "prnt_menu_id": "MG1004",
+    "menulevel": 2,
+    "sort": 2,
+    "title": "장애 현황",
+    "title_eng": ""
+  },
+  {
+    "href": "/detection/detectionsSmsSet",
+    "menu_id": "M100002",
+    "prnt_menu_id": "MG1004",
+    "menulevel": 2,
+    "sort": 2,
+    "title": "장애 알람 설정",
+    "title_eng": ""
+  },
+  {
+    "href": "/report",
+    "menu_id": "MG0004",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 3,
+    "title": "현황 및 통계",
+    "title_eng": "Condition and Statistics"
+  },
+  {
+    "href": "/report/collectorReport",
+    "menu_id": "M00010",
+    "prnt_menu_id": "MG0004",
+    "menulevel": 2,
+    "sort": 0,
+    "title": "수집 현황",
+    "title_eng": "Condition of Gathering"
+  },
+  {
+    "href": "/report/collectorAccumulateReport",
+    "menu_id": "MG0006",
+    "prnt_menu_id": "MG0004",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "수집 누적량",
+    "title_eng": "Form Example"
+  },
+  {
+    "href": "/report/collectorRealReport",
+    "menu_id": "MG0007",
+    "prnt_menu_id": "MG0004",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "수집 일괄 조회",
+    "title_eng": "Form Example"
+  },
+  {
+    "href": "/report/statusReport",
+    "menu_id": "M00012",
+    "prnt_menu_id": "MG0004",
+    "menulevel": 2,
+    "sort": 2,
+    "title": "수집/통신 성공률",
+    "title_eng": "Icon Example"
+  },
+  {
+    "href": "/report/statusSmsReport",
+    "menu_id": "M00013",
+    "prnt_menu_id": "MG0004",
+    "menulevel": 2,
+    "sort": 3,
+    "title": "SMS 발송 현황(고객사별)",
+    "title_eng": "Condition of Gathering"
+  },
+  {
+    "href": "#",
+    "menu_id": "MG0005",
+    "prnt_menu_id": "MG0004",
+    "menulevel": 2,
+    "sort": 3,
+    "title": "이력관리",
+    "title_eng": "Form Example"
+  },
+  {
+    "href": "/report/smsHistoryReport",
+    "menu_id": "M00015",
+    "prnt_menu_id": "MG0005",
+    "menulevel": 3,
+    "sort": 0,
+    "title": "SMS 발송 이력 ",
+    "title_eng": ""
+  },
+  {
+    "href": "/report/actuatorReport",
+    "menu_id": "M00016",
+    "prnt_menu_id": "MG0005",
+    "menulevel": 3,
+    "sort": 2,
+    "title": "제어이력",
+    "title_eng": ""
+  },
+  {
+    "href": "/report/loginReport",
+    "menu_id": "M00017",
+    "prnt_menu_id": "MG0005",
+    "menulevel": 3,
+    "sort": 3,
+    "title": "로그인이력",
+    "title_eng": ""
+  },
+  {
+    "href": "/board",
+    "menu_id": "board",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 4,
+    "title": "게시판",
+    "title_eng": ""
+  },
+  {
+    "href": "/board/noti",
+    "menu_id": "boardNotice",
+    "prnt_menu_id": "board",
+    "menulevel": 2,
+    "sort": 0,
+    "title": "공지사항",
+    "title_eng": ""
+  },
+  {
+    "href": "/board/faq",
+    "menu_id": "boardFaqAdmin",
+    "prnt_menu_id": "board",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "FAQ(ADMIN)",
+    "title_eng": ""
+  },
+  {
+    "href": "/board/userFaq",
+    "menu_id": "userFaq",
+    "prnt_menu_id": "board",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "FAQ",
+    "title_eng": ""
+  },
+  {
+    "href": "/board/post",
+    "menu_id": "boardOpen",
+    "prnt_menu_id": "board",
+    "menulevel": 2,
+    "sort": 2,
+    "title": "자유게시판",
+    "title_eng": ""
+  },
+  {
+    "href": "/board/lib",
+    "menu_id": "boardReference",
+    "prnt_menu_id": "board",
+    "menulevel": 2,
+    "sort": 3,
+    "title": "자료실",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr",
+    "menu_id": "MG00050",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 5,
+    "title": "사용자",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/cust",
+    "menu_id": "MG00060",
+    "prnt_menu_id": "MG00050",
+    "menulevel": 2,
+    "sort": 0,
+    "title": "고객사 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/cust/customerList",
+    "menu_id": "M000061",
+    "prnt_menu_id": "MG00060",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "고객사 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/cust/organization",
+    "menu_id": "M000063",
+    "prnt_menu_id": "MG00060",
+    "menulevel": 2,
+    "sort": 3,
+    "title": "조직 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/user/",
+    "menu_id": "MG00070",
+    "prnt_menu_id": "MG00050",
+    "menulevel": 2,
+    "sort": 0,
+    "title": "사용자 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/user/UserList",
+    "menu_id": "M000071",
+    "prnt_menu_id": "MG00070",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "사용자 관리(ADMIN)",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/user/user",
+    "menu_id": "M000072",
+    "prnt_menu_id": "MG00070",
+    "menulevel": 2,
+    "sort": 2,
+    "title": "사용자 정보 수정",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/auth/userAuth",
+    "menu_id": "MG00080",
+    "prnt_menu_id": "MG00050",
+    "menulevel": 2,
+    "sort": 3,
+    "title": "권한 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/magic",
+    "menu_id": "MG00055",
+    "prnt_menu_id": "MG00050",
+    "menulevel": 2,
+    "sort": 4,
+    "title": "마법사 설정",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/magic/component",
+    "menu_id": "M000083",
+    "prnt_menu_id": "MG00055",
+    "menulevel": 3,
+    "sort": 0,
+    "title": "컴포넌트 설정",
+    "title_eng": ""
+  },
+  {
+    "href": "/custusr/magic/dashboardModify",
+    "menu_id": "M000084",
+    "prnt_menu_id": "MG00055",
+    "menulevel": 3,
+    "sort": 1,
+    "title": "Dashboard 설정",
+    "title_eng": ""
+  },
+  {
+    "href": "/env",
+    "menu_id": "MG00100",
+    "prnt_menu_id": "#",
+    "menulevel": 1,
+    "sort": 6,
+    "title": "환경설정",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/svcMgmt/svcMgmt",
+    "menu_id": "M000101",
+    "prnt_menu_id": "MG00100",
+    "menulevel": 2,
+    "sort": 0,
+    "title": "서비스 설정",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/commoncode/commoncodeMgmt",
+    "menu_id": "M000102",
+    "prnt_menu_id": "MG00100",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "공통코드관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/device",
+    "menu_id": "MG00110",
+    "prnt_menu_id": "MG00100",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "장비 설정 ",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/device/deviceList",
+    "menu_id": "M000111",
+    "prnt_menu_id": "MG00110",
+    "menulevel": 3,
+    "sort": 0,
+    "title": "장비 속성 관리 ",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/device/deviceEnter",
+    "menu_id": "M000113",
+    "prnt_menu_id": "MG00110",
+    "menulevel": 3,
+    "sort": 1,
+    "title": "장비 가입 관리 ",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/device/deviceRule",
+    "menu_id": "M000112",
+    "prnt_menu_id": "MG00110",
+    "menulevel": 3,
+    "sort": 2,
+    "title": "장비 룰 관리 ",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/program",
+    "menu_id": "MG00120",
+    "prnt_menu_id": "MG00100",
+    "menulevel": 2,
+    "sort": 1,
+    "title": "환경설정 관리 ",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/program/api/apiMgmt",
+    "menu_id": "M000121",
+    "prnt_menu_id": "MG00120",
+    "menulevel": 3,
+    "sort": 1,
+    "title": "API 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/program/prog/progMgmt",
+    "menu_id": "M000122",
+    "prnt_menu_id": "MG00120",
+    "menulevel": 3,
+    "sort": 2,
+    "title": "프로그램관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/program/temp/templateMgmt",
+    "menu_id": "M000123",
+    "prnt_menu_id": "MG00120",
+    "menulevel": 3,
+    "sort": 3,
+    "title": "템플릿 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/program/temp/jqgridTemplateMgmt",
+    "menu_id": "M000126",
+    "prnt_menu_id": "MG00120",
+    "menulevel": 3,
+    "sort": 3,
+    "title": "수집 / 제어 헤더 관리",
+    "title_eng": ""
+  },
+  {
+    "href": "/env/program/menu/menuMgmt",
+    "menu_id": "M000125",
+    "prnt_menu_id": "MG00120",
+    "menulevel": 3,
+    "sort": 5,
+    "title": "메뉴 관리",
+    "title_eng": ""
+  }
+]

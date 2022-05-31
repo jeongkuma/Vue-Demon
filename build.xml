@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<project name="scp" default="all" basedir=".">
+        <target name="all">
+		<copy todir="/auiot/service/scp/webdoc/ROOT" >
+			<fileset dir="/root/.jenkins/workspace/AUIOT_door_sui/dist" includes="**" />
+		</copy>
+	</target>
+</project>

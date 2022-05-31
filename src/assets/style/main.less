@@ -1,0 +1,77 @@
+/* 다른 위치의 less나 css 파일들을 이렇게 import 할 수 있습니다. */
+/* less의 경우 확장자를 안써도 됩니다. */
+/* default less 셋 */
+
+@import './ui.jqgrid.css';
+@import './style.css';
+@import './form';
+@import './login';
+@import './theme_blue.less';
+@import './theme_green.less';
+@import './popup.less';
+
+._dashboard-video {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  ._dashboard-video-header {
+    display: flex;
+    flex: none;
+  }
+  ._dashboard-video-body {
+    flex: 1;
+    margin-top: 10px;
+    position: relative;
+  }
+  ._dashboard-video-control {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    ._dashboard-video-control-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 22px;
+      height: 22px;
+      text-indent: -2000px;
+      overflow: hidden;
+      display: block;
+      background-color: transparent;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0L19.5263 16.5L0.473721 16.5L10 0Z' fill='black'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translate(-11px, -11px);
+      &:hover {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0L19.5263 16.5L0.473721 16.5L10 0Z' fill='%23d0006f'/%3E%3C/svg%3E%0A");
+      }
+      &.lt {
+        transform: translate(-35px, -35px) rotate(-45deg);
+      }
+      &.t {
+        transform: translate(-11px, -45px);
+      }
+      &.rt {
+        transform: translate(15px, -36px) rotate(45deg);
+      }
+      &.l {
+        transform: translate(-45px, -11px) rotate(-90deg);
+      }
+      &.r {
+        transform: translate(25px, -11px) rotate(90deg);
+      }
+      &.lb {
+        transform: translate(-35px, 11px) rotate(-10deg);
+      }
+      &.b {
+        transform: translate(-11px, 25px) rotate(180deg);
+      }
+      &.rb {
+        transform: translate(11px, 11px) rotate(-115deg);
+      }
+    }
+  }
+}

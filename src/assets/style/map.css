@@ -1,0 +1,700 @@
+/* map division */
+#main.mapdis {position:relative; min-width:1243px; padding:10px; border-radius:0 0 4px 4px; background:#d5d9dd;}
+#main.mapdis .mapdis-top {border-radius:2px 2px 0 0; border-bottom:solid 1px #a6aaad; background:#ffffff;}
+#main.mapdis .mapdis-top button#multiscreen {
+	float: left;
+	background: #ec068d;
+	border-radius: 5px;
+	padding: 3px 15px 3px 15px;
+	margin: 7px 0px 0px 10px;
+	color: #fff;
+}  
+#main.mapdis .mapdis-top:after {content:""; display:block; clear:both;}
+#main.mapdis .mapdis-top > ul {float:left; height:42px; *zoom:1;}
+#main.mapdis .mapdis-top ul:after {content:""; display:block; clear:both;}
+#main.mapdis .mapdis-top ul li {float:left; padding:9px 10px 0; background:url(/resources/images/maps/mapdis-top.png) 0 13px no-repeat;}
+#main.mapdis .mapdis-top ul li:first-child {background:none;}
+#main.mapdis .mapdis-top ul li strong {padding-left:0px/* 26px */;  font-weight:normal; background:none/* url(/resources/images/maps/mapdis-top.png) 0 0 no-repeat */;}
+#main.mapdis .mapdis-top ul li span {color:#cf2f85;}
+#main.mapdis .mapdis-top ul li.reload {float:right; width:107px; background-position:0 -45px;}
+#main.mapdis .mapdis-top ul li.reload a {display:block; width:107px; height:29px; font-size:14px; text-indent:7px; color:#ffffff;}
+#main.mapdis .mapdis-top ul li.mt01 strong {background-position:0 -98px;} /* 미운행 */
+#main.mapdis .mapdis-top ul li.mt02 strong {background-position:0 -146px;} /* 공차 */
+#main.mapdis .mapdis-top ul li.mt03 strong {background-position:0 -198px;} /* 온도이상 */
+#main.mapdis .mapdis-top ul li.mt04 strong {background-position:0 -248px;} /* 안전미준수 */
+#main.mapdis .dbhead .dbrt {float:right; padding-right:10px; padding-top:3px; font-size:14px; color:#000000;} 
+#main.mapdis .dbhead .dbrt p {float:left; height:32px; line-height:32px; overflow:hidden;}
+#main.mapdis .dbhead .dbrt p span {float:none; width:auto; margin:0; background:none;}
+#main.mapdis .dbhead .dbrt p.time {margin-right:10px;}
+#main.mapdis .dbhead .dbrt p.reload {position:relative;}
+#main.mapdis .dbhead .dbrt p.reload input[type="checkbox"] {position:absolute; z-index:-1;}
+#main.mapdis .dbhead .dbrt p.reload label {float:left; width:0; overflow:hidden; padding-left:19px; vertical-align:middle; background:url(/resources/images/common/bullet_input.png) 0 -91px no-repeat;}
+#main.mapdis .dbhead .dbrt p.reload.on label {padding-left:19px; background-position:0 -141px;}
+#main.mapdis .dbhead .dbrt p.reload .number {float:left; width:65px; height:25px; margin-top:5px; margin-left:4px; padding-left:5px; text-indent:0; line-height:21px; border:solid 1px #adb5bd; background-color:#F1F1F1; background-position:48px -627px;}
+#main.mapdis .dbhead .dbrt p.reload.on .number {background-color:#ffffff;}
+#main.mapdis .dbhead .dbrt p.reload .icon {float:right; width:25px; height:25px; margin:5px 0 0 3px; background:url(/resources/images/common/bullet_input.png) 0 -200px no-repeat; position:relative\0; top:-1px\0}
+#main.mapdis .dbhead .dbrt p.reload .icon span {position:relative; z-index:-1;}
+#main.mapdis .dbhead .dbrt p.reload.on .icon {width:23px; height:23px; border-radius:2px; border:solid 1px #adb5bd; background:url(/resources/images/common/bullet_input.png)-1px -201px no-repeat;/* background:#ffffff url(/resources/images/dashboard/reload.gif) 50% 50% no-repeat; */}
+#main.mapdis .viewex {position:absolute; top:10%; left:50%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex1 {position:absolute; top:20%; left:50%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex12 {position:absolute; top:20%; left:60%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex2 {position:absolute; top:30%; left:50%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex3 {position:absolute; top:40%; left:50%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex4 {position:absolute; top:50%; left:50%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex5 {position:absolute; top:60%; left:50%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex6 {position:absolute; top:70%; left:50%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+#main.mapdis .viewex7 {position:absolute; top:40%; left:60%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f1f1f1;}
+
+#main.mapdis .viewexN1 {position:absolute; top:40%; left:40%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f0f;}
+#main.mapdis .viewexN2 {position:absolute; top:50%; left:40%; height:30px; line-height:30px; margin-left:-100px; padding:0 8px; text-align:center; font-size:12px; color:#000000; border-radius:15px; border:solid 1px #dddddd; background:#f0f;}
+
+#main.mapdis #map {position:relative; width:100%; height:100%; background:#d5d9dd 50% 50% no-repeat; float:right; min-height:570px;}
+#main.mapdis .sidebar {position:absolute; top:62px; left:10px; width:344px; z-index:2;}
+#main.mapdis .sidebar .sdb_lyr {height:51px; background:url(/resources/images/maps/head_layer.png) no-repeat;}
+#main.mapdis .sidebar .sdb_lyr.sb_org {background-position:0 0;}
+#main.mapdis .sidebar .sdb_lyr.sb_stt {background-position:0 -100px;}
+#main.mapdis .sidebar .sdb_lyr.sb_dvc {background-position:0 -200px;}
+#main.mapdis .sidebar #sdb_lyrdiv.sdb_lyr {padding-top:51px; background-position:0 -300px;}
+#main.mapdis .sidebar .sb01 {height:33px; padding-left:12px; padding-top:18px;}
+#main.mapdis .sidebar .sb01 li {float:left; width:83px; line-height:33px; text-align:center; font-weight:bold;}
+#main.mapdis .sidebar .sb01 li.on {}
+#main.mapdis .sidebar .sb01 li a {display:block; height:33px; color:#fff;}
+#main.mapdis .sidebar .sb01 li a span {position:relative; z-index:-1;}
+#main.mapdis .sidebar .sb01_lyr {position:relative; padding:0 2px; padding-bottom:63px; background:url(/resources/images/maps/layer.png) 0 100% no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .cnt_tit {display:block; line-height:1; padding-left:20px; margin:22px 0 0 20px; font-size:18px; color:#000; background:url(/resources/images/maps/bg_map_arrow.png) 0 -2px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt {padding:0 20px; font-size:19px;} /* 조직검색결과목록 */
+#main.mapdis .sidebar .sb01_lyr .srchrlt .cnt_tit {margin-left:0; margin-bottom:12px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li {line-height:50px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li:first-child {border-top:1px solid #9aa1ac;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li > a {display:block; background:url(/resources/images/maps/bg_button.png) 260px -277px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li.on > a {color:#CF2F85; background-position:260px -377px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist {display:none; overflow-y:auto; padding-top:15px; font-size:16px; border-top:solid 1px #dfdfdf; background:#ffffff;} /* 검색레이어 조직 단말목록 */
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li {height:15px; line-height:1.4; padding-bottom:15px; padding-right:10px; padding-right:8px\9; font-size:13px; border-bottom:none;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li:after {content:""; display:block; clear:both;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li strong {float:left; padding:0 15px 0 25px; color:#000000; background:url(/resources/images/maps/bg_button.png) 10px -695px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li span {float:left; padding:0 8px; background:url(/resources/images/maps/mapdis-top.png) 0 2px no-repeat; color:#565656;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li span i {position:relative; top:-4px; display:block; width:18px; height:24px; background:url(/resources/images/maps/bg_state.png) no-repeat; text-indent:-9999px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li span.icon-switch i {width:45px; background-position:0 0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li span.icon-switch.off i {background-position:0 -40px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li span.icon-plus i {background-position:0 -80px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li span.icon-minus i {background-position:0 -110px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li button {float:right; width:18px; height:18px; overflow:hidden; border:none; background:url(/resources/images/maps/bg_button.png) 0 -500px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li button span {position:relative; z-index:-1;}
+
+#main.mapdis .sidebar .sb01_lyr .srchrlt .sttsublist {}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap {font-size:14px;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap .top {position:relative; height:40px; text-align:center; background:#b2bcce;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap .top .prev,
+#main.mapdis .sidebar .sb01_lyr .calender_wrap .top .next {display:inline-block; width:18px; text-indent:-9999px; background:url(/resources/images/maps/bg_map_arrow.png) no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap .top .prev {background-position:0 -35px;} 
+#main.mapdis .sidebar .sb01_lyr .calender_wrap .top .next {background-position:0 -70px;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap .top .monthly {display:inline-block; line-height:40px; padding:0 8px; font-size:17px; color:#414a58;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap .top .btn_today {position:absolute; top:10px; right:8px; height:21px; line-height:21px; padding:0 11px; border-radius:21px; background:#d9dee7; color:#767994;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table {width:100%;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table thead th {height:30px; text-align:center; border-bottom:1px solid #f3f3f3; background:#d9dee7; color:#767994;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td {height:32px; text-align:center; border:solid #ebebeb; border-width:1px 1px 0; background:#fff; color:#b7b7b7;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody .area,
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody .area a {background:#f7f7f7;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody .fir td {border-width:0 1px;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td a {display:table; width:100%; height:100%; color:#676767;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td a:hover {color:#676767;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table a span {display:table-cell; vertical-align:middle;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td .today, #main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td .today:hover {background:#fde6f3;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td .select_day {background:#fff; color:#6371d1; text-decoration:underline;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td .select_day:hover {color:#6371d1;}
+
+#main.mapdis .sidebar .sb01_lyr .timeslider {height:75px; margin-top:10px; background:#fff; } /* 궤적 */
+
+#main.mapdis .sidebar .sb01_lyr .hddfrm {min-height:auto; padding:10px 0; font-size:14px; color:#000000; background:#eaeef0;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl {*zoom:1;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl:after {content:""; display:block; clear:both;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl dt {float:left; width:64px; height:30px; line-height:30px; padding-left:36px; font-weight:bold; background:url(/resources/images/maps/bg_button.png) 20px -788px no-repeat;font-size: 14px;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl dd {float:left; width:240px; height:30px; line-height:30px;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl dd select {width:100px; height:30px; border-radius:4px; border:solid 1px #9aa5b8; background:#fff url(/resources/images/common/bullet_board.png) 100% -543px no-repeat; background:none\0; background-color:#fff\0;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl dd input.intext01 {float: none; width:100px; height: 28px; line-height: 28px; padding: 0 5px; box-shadow: 1px 1px 1px #EFEFEF inset; border: 1px solid #9AA5B8; border-right: none; border-radius: 4px; vertical-align: middle; border-right: 1px solid #9AA5B8;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl dd input {float:left;}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl dd input[type=radio] {margin-top:8px}
+#main.mapdis .sidebar .sb01_lyr .hddfrm dl dd label {float:left; width:37px; letter-spacing:-2px;font-size:14px;}
+#main.mapdis .sidebar #sb_stt.sb01_lyr .hddfrm .srch_keyword {height:auto;}
+#main.mapdis .sidebar #sb_stt.sb01_lyr .hddfrm .srch_keyword .add_srch {margin-top:7px; *zoom:1;}
+#main.mapdis .sidebar #sb_stt.sb01_lyr .hddfrm .srch_keyword .add_srch:after {content:""; display:block; clear:both;}
+#main.mapdis .sidebar #sb_stt.sb01_lyr .hddfrm .srch_keyword .add_srch .intext01{float:left; width:116px;} 
+#main.mapdis .sidebar #sb_stt.sb01_lyr .hddfrm .srch_keyword .add_srch input[type="submit"] {display:block; width:91px; height:30px; margin-left:6px; text-indent:-10000px; background:url(/resources/images/maps/btn_search.png) 0 -205px no-repeat;}
+
+#main.mapdis .sidebar #sb_dvc.sb01_lyr .hddfrm {height:40px; padding:15px 20px;}
+#main.mapdis .sidebar #sb_dvc.sb01_lyr .hddfrm dl {float:left; width:212px;}
+#main.mapdis .sidebar #sb_dvc.sb01_lyr dt {width:68px; padding-left:10px; line-height:36px; font-size:16px; font-weight:normal; background-position:0 -786px;}
+#main.mapdis .sidebar #sb_dvc.sb01_lyr dd {width:130px;}
+#main.mapdis .sidebar #sb_dvc.sb01_lyr dd input {width:120px; height:36px; line-height:36px; padding-left:5px; font-size:14px; border-radius:2px; border:solid 1px #bec7cc;} 
+#main.mapdis .sidebar #sb_dvc.sb01_lyr .havbtn {float:left; width:88px; margin:0; padding:0;}
+#main.mapdis .sidebar .sb01_lyr .dvclist {overflow-x:hidden; overflow-y:auto; padding:0 20px; font-size:16px;} /* 검색레이어 상태,단말목록 */
+#main.mapdis .sidebar .sb01_lyr .dvclist > li {padding:15px 0; line-height:18px; font-size:16px; border-bottom:solid 1px #afafaf;}
+#main.mapdis .sidebar .sb01_lyr .dvclist > li:after {content:""; display:block; clear:both;}
+#main.mapdis .sidebar .sb01_lyr .dvclist > li strong {float:left; padding:0 13px 0 20px; color:#000000; background:url(/resources/images/maps/bg_button.png) 8px -693px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .dvclist > li span {float:left; padding:0 13px; color:#868686; background:url(/resources/images/maps/mapdis-top.png) 0 3px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .dvclist > li button {float:right; width:18px; height:18px; overflow:hidden; border:none; background:url(/resources/images/maps/bg_button.png) 0 -500px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .dvclist > li button span {position:relative; z-index:-1;}
+#main.mapdis .sidebar #sb_org.sb01_lyr .havbtn input {display:block; width:148px; height:40px; margin:0 auto; text-indent:-10000px; background:url(/resources/images/maps/btn_search.png) no-repeat;}
+#main.mapdis .sidebar #sb_stt.sb01_lyr .havbtn input {display:block; width:148px; height:40px; margin:8px auto 15px; text-indent:-10000px; background:url(/resources/images/maps/btn_search.png) no-repeat;}
+#main.mapdis .sidebar #sb_dvc.sb01_lyr .havbtn input {display:block; width:88px; height:40px; margin:0 auto; text-indent:-10000px; background:url(/resources/images/maps/btn_search.png) 0 -150px no-repeat;}
+
+#main.mapdis .sidebar .hddfrm {position:relative; min-height:289px; padding:0 2px; background:url(/resources/images/maps/layer.png) 0 100% no-repeat; padding-bottom:25px;} /* 레이어 */
+#main.mapdis .sidebar .hddfrm .sch_lyr {overflow-x:hidden; overflow-y:scroll; padding:20px;}
+#main.mapdis .sidebar .hddfrm .sch_lyr li {height:40px; line-height:44px; overflow:hidden; padding-left:9px; border-bottom:solid 1px #afafaf;}
+#main.mapdis .sidebar .hddfrm .sch_lyr li input {float:left; height:44px; margin:0;}
+#main.mapdis .sidebar .hddfrm .sch_lyr li label {float:left;}
+#main.mapdis .sidebar .hddfrm .sch_lyr li label .icon {display:table-cell; vertical-align:middle; width:48px; height:44px;text-align:center;}
+#main.mapdis .sidebar .hddfrm .sch_lyr li label .icon img {}
+#main.mapdis .sidebar .hddfrm .sch_lyr li label .txtt {display:table-cell; vertical-align:middle; height:44px; }
+#main.mapdis .sidebar .hddfrm .havbtn {width:165px; height:35px; margin:14px auto 0;}
+#main.mapdis .sidebar .hddfrm .layer_sbmt {float:left; width:80px; height:35px; margin-right:5px; text-indent:-10000px; background:url(/resources/images/maps/btn_search.png) 0 -50px no-repeat;}
+#main.mapdis .sidebar .hddfrm .layer_rst {float:left; width:80px; height:35px; text-indent:-10000px; background:url(/resources/images/maps/btn_search.png) 0 -100px no-repeat;}
+
+#main.mapdis .sidebar .sb01_lyr .havbtn {padding:3px 0; text-align:center;}
+#main.mapdis .sidebar .sb01_lyr .btn_srchrlt {border-top:solid 1px #9f9f9f;}
+#main.mapdis .sidebar .sb01_lyr .btn_srchrlt button {display:block; width:80px; height:20px; margin:0 auto; font-size:11px; color:#6f6f6f; border-radius:0 0 4px 4px; border:solid 1px #9f9f9f; border-top:none; background:linear-gradient(#ffffff, #dde8f7);;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt {overflow-x:hidden; overflow-y:scroll; background:#EAEEF0;}
+
+#main.mapdis .sidebar .sb01_lyr .srchrlt li {border-bottom:solid 1px #afafaf; *zoom:1}
+#main.mapdis .sidebar .sb01_lyr .srchrlt li p:after {content:""; display:block; clear:both;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt li > p a {float:left;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt li > p span {float:right;}
+#main.mapdis .sidebar .moredtl {position:absolute; bottom:0; left:0; width:280px; padding:10px; background:#dde8f7;}
+#main.mapdis .sidebar .moredtl p {padding-bottom:5px; line-height:23px;}
+#main.mapdis .sidebar .moredtl p label {padding-right:5px;}
+#main.mapdis .sidebar .sb01_lyr .sch_lyr {padding:20px;}
+#main.mapdis .sidebar .sb01_lyr .sch_lyr li {height:30px;}
+#main.mapdis .sidebar .sb01_lyr .sch_lyr li input {margin-right:4px;}
+#main.mapdis .sidebar .sdb_lyr .hlp {position:absolute; bottom:10px; left:20px; width:280px; height:45px; padding-left:20px; font-size:12px; color:#979797; background:url(/resources/images/maps/bg_button.png) 0 -595px no-repeat;}
+
+#main.mapdis .sidebar .sdb_lyr .closeline {
+	margin: 10px 15px 20px 15px;
+	border-bottom: 1px solid #CCCCCE;
+	cursor: pointer;
+}
+#main.mapdis .sidebar .sdb_lyr .closeline .closebtn {
+	background: url("/resources/images/common/btn_sidemenu.png") 0px -20px no-repeat;
+	width: 24px;
+	height: 12px;
+	position: absolute;
+	right: 15px;
+}
+
+#sb_stt {display:none}
+#sb_dvc {display:none;}
+#sdb_lyrdiv {display:none;}
+
+/* 실시간관제 - 차량상태 */
+.check_wrap {position:absolute; right:63px; top:145px; z-index:10000;}
+.check_wrap .check_list > li {position:relative; margin-top:-1px;}
+.check_wrap .check_list > li > a {display:block; width:48px; height:39px; border:solid #4a505a; border-width:1px; background:#fff url(/resources/images/maps/bg_chk_list.png) no-repeat; text-indent:-9999px;}
+.check_wrap .check_list .chk1 > a {background-position:0 0;}
+.check_wrap .check_list .chk2 > a {background-position:0 -39px;}
+.check_wrap .check_list .chk3 > a {background-position:0 -78px;}
+.check_wrap .check_list .chk1 .chk_detail {width:149px;}
+.check_wrap .check_list .chk2 .chk_detail {width:349px;}
+.check_wrap .check_list .chk_detail {position:absolute; top:0; right:49px; border:1px solid #4a505a;}
+.check_wrap .check_list .chk_detail > li {float:left; padding:5px 0; background:#f5f5f5;}
+.check_wrap .check_list .chk_detail > li > a {display:block; width:49px; height:29px; border-left:1px solid #d0d0d0; text-indent:-9999px; background:url(/resources/images/maps/bg_chk_off.png) no-repeat;}
+.check_wrap .check_list .chk_detail > li.on > a {background-image:url(/resources/images/maps/bg_chk_on.png);}
+.check_wrap .check_list .chk_detail > li:first-child > a {border-left:0 none;}
+.check_wrap .check_list .chk_detail .figure {position:relative;}
+.check_wrap .check_list .chk_detail .figure span {position:absolute; left:5%; bottom:0; width:90%; height:13px; line-height:1; font-size:13px; color:#000; text-indent:0; text-align:center; overflow:hidden;}
+.check_wrap .check_list .chk_detail .on .figure span {color:#ee1c98;}
+.check_wrap .check_list .chk1 .chk_detail > li:first-child a {background-position:0 0;}
+.check_wrap .check_list .chk1 .chk_detail > li:first-child + li a {background-position:-49px 0;}
+.check_wrap .check_list .chk1 .chk_detail > li:first-child + li + li a {background-position:-98px 0;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child a {background-position:0 0;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li a {background-position:-147px 0;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li + li a {background-position:-196px 0;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li + li + li a {background-position:-245px 0;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li + li + li + li a {background-position:-294px 0;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li + li + li + li + li a {background-position:-343px 0;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li + li + li + li + li + li a {background-position:-392px 0;}
+
+.chk_car_detail {position:absolute; bottom:0; right:20px; max-width:1030px; width:933px; height:auto; padding:20px 20px 0px 20px; border:2px solid #4a5568; border-radius:7px; background:#fff; display:none; z-index:1}
+.chk_car_detail strong {display:block; line-height:1; padding-left:20px; margin-bottom:10px; font-size:18px; color:#000; background:url(/resources/images/maps/bg_map_arrow.png) 0 -2px no-repeat;}
+.chk_car_detail .btn_cls {position:absolute; top:8px; right:10px; width:35px; height:35px; background:url(/resources/images/maps/bg_map_arrow.png) -74px -77px no-repeat; text-indent:-9999px;}
+
+.chk_car_detail .btn_cls.new_btn_cls{top:-32px; background: url(../images/maps/new_pop_close.png) no-repeat;}
+.chk_car_detail{right:54px;}
+.chk_car_detail.new{z-index:5; max-width:none; box-sizing:border-box;}
+.chk_car_detail{right:0;}
+.chk_car_detail.new{max-width:none; box-sizing:border-box;}
+/* maps sidebar button */
+#main.mapdis .sidebar button, 
+#main.mapdis .sidebar input[type=submit],
+#main.mapdis .sidebar input[type=reset] {margin:0; padding:3px 6px; border-radius:4px; font-size:12px; color:#888; border:none; background:none;}
+#main.mapdis .sidebar input.textbox,
+#main.mapdis .sidebar input.datepicker {width:140px; height:23px; margin:0; padding:0 0 0 9px; line-height:23px; border-radius:2px; border:solid 1px #dfdfdf; background:#fefefe;}
+#main.mapdis .sbbtnspn {position:absolute; top:57px; left:344px; z-index:100;}
+#main.mapdis .sbbtnspn button, 
+#main.mapdis .sbbtnspn a {background:url(/resources/images/maps/bg_button.png) no-repeat;}
+#main.mapdis .sbbtnspn .btn_sidebar {position:absolute; top:0; left:0; width:30px; height:28px; overflow:hidden; }
+#main.mapdis .sbbtnspn .btn_sidebar.on {background-position:-50px 0;}
+#main.mapdis .sbbtnspn .btn_schdiv {position:absolute; top:41px; left:0; width:42px; height:38px; overflow:hidden; background-position:0 -100px;}
+#main.mapdis .sbbtnspn .btn_schdiv.on {background-position:-50px -100px;}
+#main.mapdis .sbbtnspn .btn_lyrdiv {position:absolute; top:82px; left:0; width:42px; height:38px; overflow:hidden; background-position:0 -200px;}
+#main.mapdis .sbbtnspn .btn_lyrdiv.on {background-position:-50px -200px;}
+#main.mapdis .sbbtnspn button span, 
+#main.mapdis .sbbtnspn a span {display:block; text-indent:-10000px;}
+
+/* maps navigation */
+#sidemenu {}
+#sidemenu {}
+#sidemenu ul {background:url(/resources/images/maps/sidemenu_level.png) 100% 27px no-repeat;}
+#sidemenu li {position:relative;}
+#sidemenu li button {display:block; width:34px; overflow:hidden; background:url(/resources/images/maps/sidemenu.png) no-repeat;}
+#sidemenu li button span {position:relative; z-index:-1;}
+#sidemenu li .cmdtip {display:none; position:absolute; top:0; left:0;}
+#sidemenu:hover li .cmdtip,
+#sidemenu li.on .cmdtip {display:block;}
+#sidemenu li[class^="level_"] {height:9px; background-position:100% -37px;}
+#sidemenu li[class^="level_"] button {display:block; height:0; overflow:hidden; padding-top:9px; background:none;}
+#sidemenu li[class^="level_"] button span {height:9px;}
+#sidemenu li[class^="level_"].on:after {content:""; position:absolute; left:5px; top:-1px; width:24px; height:13px; display:block; background:url(/resources/images/maps/sidemenu_on.png) no-repeat;}
+#sidemenu li.level_18.on:after {height:152px;}
+#sidemenu li.level_17.on:after {height:118px;}
+#sidemenu li.level_16.on:after {height:109px;}
+#sidemenu li.level_15.on:after {height:100px;}
+#sidemenu li.level_14.on:after {height:91px;}
+#sidemenu li.level_13.on:after {height:82px;}
+#sidemenu li.level_12.on:after {height:73px;}
+#sidemenu li.level_11.on:after {height:64px;}
+#sidemenu li.level_10.on:after {height:56px;}
+#sidemenu li.level_9.on:after {height:47px;}
+#sidemenu li.level_8.on:after {height:38px;}
+#sidemenu li.level_7.on:after {height:29px;}
+#sidemenu li.level_6.on:after {height:20px;}
+#sidemenu li.level_5.on:after {height:13px;}
+#sidemenu li.levelp {height:37px; background-position:100% 0;}
+#sidemenu li.levelp button {height:27px; background-position:100% 0;}
+#sidemenu li.levelm {height:28px; padding-top:10px; background-position:100% -155px;}
+#sidemenu li.levelm button {height:28px; background-position:100% -164px;}
+#sidemenu li .cmdtip {left:-54px; width:47px; height:19px; text-indent:-1000000px; background:url(/resources/images/maps/sidemenu.png) no-repeat;}
+#sidemenu li .lvl1 {background-position:0 0;}
+#sidemenu li .lvl2 {background-position:0 -24px;}
+#sidemenu li .lvl3 {background-position:0 -49px;}
+#sidemenu li .lvl4 {background-position:0 -73px;}
+#sidemenu li .lvl5 {background-position:0 -98px;}
+#sidemenu li.act_1 button {height:26px; background-position:100% -203px;}
+#sidemenu li.act_2 button {height:26px; background-position:100% -229px;}
+#sidemenu li.act_3 button {height:26px; background-position:100% -255px;}
+#sidemenu li.act_4 button {height:26px; background-position:100% -281px;}
+#sidemenu li.act_5 button {height:26px; background-position:100% -307px;}
+#sidemenu li.act_6 button {height:26px; background-position:100% -333px;}
+#sidemenu li.act_7 button {height:26px; background-position:100% -359px;}
+#sidemenu li.act_8 button {height:27px; background-position:100% -385px;}
+#sidemenu li.act_9 button {height:26px; background-position:100% -412px; display:none;}
+#sidemenu li.lists {margin-top:14px;}
+#sidemenu li.liste button {height:27px;}
+
+/* 2016-05-02 add */
+.hide{display:none;}
+.logistics_wrap{overflow:hidden;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt{padding:0 15px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist{padding:0; border:0; background:none;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li{position:relative; padding:0; height:auto;  width:100%; background:#fff;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt li.on{border-bottom:0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li span{padding:0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .ico-car {background:url(/resources/images/maps/hm_bg_img1.png) center 8px no-repeat; width:46px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .ico-car.on {background:url(/resources/images/maps/hm_bg_img1.png) center -26px no-repeat;}
+/* #main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .car-num{width:99px; color:#000; text-align:center; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; line-height:36px; background:none; font-size:14px;} */
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .car-num{width: 47%; width: -webkit-calc(47% - 47px); width: -moz-calc(47% - 47px); width: calc(47% - 47px); color:#000; text-align:center; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; line-height:36px; background:none; font-size:14px;}
+
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .car-num.word_ellipsis{width: 47%; width: -webkit-calc(47% - 47px); width: -moz-calc(47% - 47px); width: calc(47% - 47px); color:#000; text-align:center; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; line-height:36px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background:none; font-size:14px;}
+
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .car-num:hover {text-decoration:underline; cursor:pointer;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .ico-weather1 a{display:block; width:100%; height:100%;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .ico-weather2 a{display:block; width:100%; height:100%;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .ico-weather1{background:url(/resources/images/maps/hm_bg_img1.png) center -57px no-repeat; width:36px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .ico-weather2{background:url(/resources/images/maps/hm_bg_img1.png) center -91px no-repeat; width:36px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .ico-weather_none{width:36px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; background:none;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .address{width:99px; font-size:13px; color:#000; border-bottom:1px solid #eaeef0; text-align:center; line-height:36px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background:none; padding:0 5px;height: 36px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .address.noweather{width:136px; font-size:13px; color:#000; border-bottom:1px solid #eaeef0; text-align:center; line-height:36px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background:none; padding:0 5px;height: 36px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .nocontents{padding-left: 10px;border-bottom: 1px solid #eaeef0;line-height: 36px;background: none;font-size: 14px;}
+.check_wrap{right:20px; top:233px;}
+.check_wrap .check_list > li > a{width:34px; height:26px; background:url(/resources/images/maps/hm_bg_chk_list.png) no-repeat; border:0;}
+.check_wrap .check_list .chk2 > a {background-position: 0 -26px;}
+.check_wrap .check_list .chk3 > a {background-position: 0 -52px; height:27px;}
+.check_wrap .check_list .chk_detail{right:33px; border:0;}
+.check_wrap .check_list .chk_detail > li{float:none; padding:0; background:none;}
+.check_wrap .check_list .chk_detail > li > a{display: block; width:100%; height: 26px; background: url(/resources/images/maps/hm_bg_chk2_off.png) no-repeat; border:0; text-indent:0; font-size:11px; color:#333; text-align:right;}
+.check_wrap .check_list .chk_detail > li > a span{line-height:26px; padding-right:14px;}
+.check_wrap .check_list .chk_detail > li.last > a{height:27px;}
+.check_wrap .check_list .chk2 .chk_detail{width:116px;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li a{background-position:0 -208px;}
+.check_wrap .check_list .chk2 .chk_detail > li:first-child + li + li a{background-position:0 -234px;}
+
+.check_wrap .check_list .chk3 .chk_detail{width:116px;}
+.check_wrap .check_list .chk3 .chk_detail > li:first-child + li a{background-position:0 -26px;}
+.check_wrap .check_list .chk3 .chk_detail > li:first-child + li + li a{background-position:0 -52px;}
+.check_wrap .check_list .chk3 .chk_detail > li:first-child + li + li + li a{background-position:0 -78px;}
+.check_wrap .check_list .chk3 .chk_detail > li:first-child + li + li + li + li a{background-position:0 -104px;}
+.check_wrap .check_list .chk3 .chk_detail > li:first-child + li + li + li + li + li a{background-position:0 -130px;}
+.check_wrap .check_list .chk3 .chk_detail > li:first-child + li + li + li + li + li + li a{background-position:0 -156px; border-bottom:1px solid #878b92;}
+.check_wrap .check_list .chk_detail > li.on > a {background-image: url(/resources/images/maps/hm_bg_chk2_on.png);}
+.check_wrap .check_list .chk_detail{display:none;}
+.check_wrap .check_list .on .chk_detail {display:block;}
+/*#main.mapdis .sidebar .sb01_lyr .timeslider {display:block}*/
+#main.mapdis .sidebar .sb01_lyr .havbtn{display:block;}
+.nBCal.strain{
+	border:0;
+	/* width:293px; */
+	margin:0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	/* max-height: 300px; */
+}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap {margin:10px auto 0;}
+#main.mapdis .sidebar .sb01_lyr .strain .cnt_tit{margin:10px 0 0 0 ;}
+#main.mapdis .sidebar .sb01_lyr .calender_wrap table tbody td{height:22px;}
+#main.mapdis .sidebar .sb01_lyr{padding-bottom:6px;}
+
+/*시스템관제*/
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li > a{font-size:16px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .car-num a{color:#000; font-size:13px; text-decoration:underline;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .logistics_wrap .address{font-size:13px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li{line-height:40px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li.on > a{background-position: 260px -383px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt > li > a{background: url(/resources/images/maps/bg_button.png) 260px -282px no-repeat;}
+#main.mapdis .sidebar .sb01 li a span{z-index:0; font-size:16px; font-weight:normal;}
+#main.mapdis .sidebar .sb_org .sb01 li:first-child a span{color:#000;}
+#main.mapdis .sidebar .sb_stt .sb01 li a span{color:#000;}
+#main.mapdis .sidebar .sb_stt .sb01 li:first-child a span{color:#fff;}
+.chk_car_detail .btn_cls.new_btn_cls{top:-32px; background: url(/resources/images/maps/new_pop_close.png) no-repeat;}
+.chk_car_detail{right:54px;}
+
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li{position:static;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist > li .bg_car button{background:none;}
+
+.pop_table{border-left:1px solid #ddd; width:100%;}
+.pop_table th{background: #4a5568; font-size:13px; color:#fff; padding :5px 10px;  border-right:1px solid #4a5568;}
+.pop_table td{font-size:13px; color:#5a5a5a; border-right:1px solid #dddddd; border-bottom:1px solid #dddddd; padding:0 10px; text-align:center;}
+.chk_car_detail.new{z-index:5; max-width:none; box-sizing:border-box;}
+.ico-car{display:block; background: url(/resources/images/maps/hm_bg_img1.png) center 2px no-repeat;width: 46px;height: 24px;padding: 0;}
+.ico-car.on{display:block; background: url(/resources/images/maps/hm_bg_img1.png) center -32px no-repeat;width: 46px;height: 24px;padding: 0;}
+.pop_table button{height: 24px; line-height: 24px; vertical-align: middle; padding: 0 14px; border-radius: 2px; border: solid 1px #9AA5B8; color: #666666; background: #f1f1f1;}
+.ico-weather1{display:inline-block; background: url(/resources/images/maps/hm_bg_img1.png) center -58px no-repeat; width: 36px; height: 32px; padding: 0; vertical-align:middle;}
+.ico-weather2{display:inline-block; background: url(/resources/images/maps/hm_bg_img1.png) center -93px no-repeat; width: 36px; height: 32px; padding: 0; vertical-align:middle;}
+.bg_car{background:url(/resources/images/maps/bg_car_box.png) no-repeat;}
+.layerpopup.infowin.tooltip.bg_car{left:355px; top:auto; margin:-110px 0 0 0; width:115px; border:0; border-radius:0;}
+.layerpopup.infowin.tooltip.bg_car .lp_header{background:0;}
+.layerpopup.infowin.tooltip .lp_cont.car_ico{height:57px; width:120px; padding:0; position:relative; background:url(/resources/images/maps/bg_car.png) center no-repeat;}
+.layerpopup.infowin.tooltip .lp_cont.car_ico p.right_c{position:absolute; width:27px; height:23px; text-align:center; line-height:24px; color:#fff; top:12px; left:74px; background:#5396f2;}
+.layerpopup.infowin.tooltip .lp_cont.car_ico p.left_c{position:absolute; width:27px; height:23px; text-align:center; line-height:24px; color:#fff; top:12px; left:40px; background:#ff0000;}
+#main.mapdis .sidebar{z-index:10000;}
+
+/*실시간관제*/
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 {display:none; overflow-y:auto; padding-top:15px; font-size:16px; border-top:solid 1px #dfdfdf; background:#ffffff;} /* 검색레이어 조직 단말목록 */
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li {height:15px; line-height:1.4; padding-bottom:15px; padding-right:10px; padding-right:8px\9; font-size:13px; border-bottom:none;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li:after {content:""; display:block; clear:both;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li strong {float:left; padding:0 15px 0 25px; color:#000000; background:url(/resources/images/maps/bg_button.png) 10px -695px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li span {float:left; padding:0 8px; background:url(/resources/images/maps/mapdis-top.png) 0 2px no-repeat; color:#565656;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li span i {position:relative; top:-4px; display:block; width:18px; height:24px; background:url(/resources/images/maps/bg_state.png) no-repeat; text-indent:-9999px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li span.icon-switch i {width:45px; background-position:0 0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li span.icon-switch.off i {background-position:0 -40px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li span.icon-plus i {background-position:0 -80px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li span.icon-minus i {background-position:0 -110px;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li button {float:right; width:18px; height:18px; overflow:hidden; border:none; background:url(/resources/images/maps/bg_button.png) 0 -500px no-repeat;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li button span {position:relative; z-index:-1;}
+
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2{padding:0; border:0; background:none;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li{position:relative; padding:0; height:auto;  width:100%; background:#fff;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt li.on{border-bottom:0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li span{padding:0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .ico-car {background:url(/resources/images/maps/hm_bg_img1.png) center 8px no-repeat; width:46px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .ico-car.on {background:url(/resources/images/maps/hm_bg_img1.png) center -26px no-repeat;}
+/* #main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .car-num {width:99px; color:#000; text-align:center; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; line-height:36px; background:none; font-size:14px;} */
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .car-num
+{
+width: 47%; width: -webkit-calc(47% - 47px); width: -moz-calc(47% - 47px); width: calc(47% - 47px);
+color:#000; text-align:center; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; line-height:36px; background:none; font-size:14px;
+}
+
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .car-num.word_ellipsis
+{
+width: 47%; width: -webkit-calc(47% - 47px); width: -moz-calc(47% - 47px); width: calc(47% - 47px);
+color:#000; text-align:center; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; line-height:36px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background:none; font-size:14px;
+}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .car-num:hover {text-decoration:underline; cursor:pointer;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .car-num a{color:#000;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .ico-weather1{background:url(/resources/images/maps/hm_bg_img1.png) center -57px no-repeat; width:36px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .ico-weather2{background:url(/resources/images/maps/hm_bg_img1.png) center -91px no-repeat; width:36px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .ico-weather_none{width:36px; height:36px; padding:0; border-right:1px solid #eaeef0; border-bottom:1px solid #eaeef0; background:none;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .address{width:109px; font-size:13px; color:#000; border-bottom:1px solid #eaeef0; text-align:center; line-height:36px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background:none;}
+#main.mapdis .sidebar .sb01_lyr .srchrlt .orgsublist2 > li .logistics_wrap .address.noweather{width:146px; font-size:13px; color:#000; border-bottom:1px solid #eaeef0; text-align:center; line-height:36px;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background:none;}
+
+#main.mapdis .sidebar{top:43px; left:0;}
+
+/*실시간관제 2016-05-18*/
+#routeevtgrid.chk_car_result .header {}
+#routeevtgrid.chk_car_result .header:after {clear:both;}
+#routeevtgrid.chk_car_result .header strong {float:left; width:75px; display:block; line-height:1; padding-left:20px; margin-bottom:10px; font-size:18px; color:#000; background:url(/resources/images/maps/bg_map_arrow.png) 0 -2px no-repeat;}
+#routeevtgrid.chk_car_result .header span {font-size: 15px;line-height: 17px;}
+#routeevtgrid.chk_car_result .header span .smfont {font-size: 12px;line-height: 17px;}/* 160628 추가 */
+#routeevtgrid.chk_car_result {position:absolute; bottom:10px; left:354px; width:auto; min-width:780px; max-width:1030px; height:auto; padding:20px 20px 0px 20px; border:2px solid #4a5568; border-radius:7px; background:#fff; display:none; z-index:1}
+#routeevtgrid.chk_car_result .btn_cls {position:absolute; top:-32px; right:10px; width:35px; height:35px; background:url(/resources/images/maps/new_pop_close.png) no-repeat; text-indent:-9999px;}
+#routeevtgrid .tbl_wrap {clear:both;}
+#route_evt .btn_open {
+	position: absolute;
+	bottom: 5px;
+	left: 1148px;
+	width: 35px;
+	height: 35px;
+	background: url(/resources/images/maps/new_pop_open.png) no-repeat;
+	text-indent: -9999px;
+}
+.chk_car_detail{right:10px; bottom:10px;}
+.chk_car_detail .btn_cls{right:55px;}
+.layerpopup.infowin.tooltip.bg_car{left:205px;}
+.pop_table{width:100%;}
+.chk_car_detail.new{max-width:none; box-sizing:border-box;}
+
+.timeslider.nBSlider {clear:both; margin-top:5px; display:none; background:#fff;}
+
+/* 경로 검색 */
+.nBBox {display:none; overflow-y:scroll; min-height:120px; max-height:230px;}
+.nBBox .sttsublist {display:none;}
+.nBBox .srchrlt {overflow-y: hidden !important;}
+
+.nBCal {border-top:1px solid #ccc}
+
+.selectedThing {background-color:#FFECEC;}
+
+.tooltip.information {
+	border: 1px solid #888;
+	background: #fff;
+	text-align: left;
+	border-radius: 5px;
+	min-width: 156px;
+	/* margin-bottom: 25px; */
+}
+
+.tooltip.information.layerpopup {
+	position: absolute;
+	z-index: 99999;
+	border: 1px solid #888;
+	background: #fff;
+	text-align: left;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	padding: 0px;
+}
+
+.tooltip.information .lp_header {
+	height: 44px;
+	line-height: 44px;
+	margin: 0;
+	padding: 0 20px;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	background: #eaeaea;
+}
+
+.tooltip.information .lp_header h3 {
+	font-size: 19px;
+	font-weight: normal;
+	color: #000000;
+}
+
+.tooltip.information .lp_cont {
+	font-size: 12px;
+	padding: 15px 20px;
+}
+
+.tooltip.information .lp_cont table tbody tr th {
+	padding: 3px 4px;
+	color: #222222;
+	border: solid 1px #cfcfcf;
+	background: #efefef;
+}
+
+.tooltip.information .lp_cont table tbody tr td {
+	padding: 3px 4px;
+	color: #222222;
+	border: solid 1px #cfcfcf;
+	width: auto;/* 160px; */
+	min-width: 113px;
+}
+
+.tooltip.information .lp_footer {
+	padding: 0;
+}
+
+.tooltip.information .lp_cont .btn_div {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.tooltip.information .lp_cont .btn_div .button.buttontypectr {
+	width: 53px;
+	height: 28px;
+	line-height: 26px;
+	text-align: left;
+	text-indent: 8px;
+	font-size: 13px;
+	border-radius: 2px;
+	color: #000000;
+	border: solid 1px #a5a5a6;
+	background: #eeeeee url(/resources/images/maps/icon_lyr.png) 38px -140px no-repeat;
+}
+
+.tooltip.information .lp_cont .btn_div .button.buttontypetck {
+	width: 53px;
+	height: 28px;
+	line-height: 26px;
+	text-align: left;
+	text-indent: 8px;
+	font-size: 13px;
+	border-radius: 2px;
+	color: #000000;
+	border: solid 1px #a5a5a6;
+	background: #eeeeee url(/resources/images/maps/icon_lyr.png) 38px -140px no-repeat;
+}
+
+.tooltip.information .lp_footer .lp_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 26px;
+	height: 24px;
+	overflow: hidden;
+}
+
+.tooltip.information .lp_cont li {
+	margin-bottom: 8px;
+	padding-left: 15px;
+	font-size: 15px;
+	color: #000000;
+	background: url(/resources/images/common/bullet_board.png) 0 -573px no-repeat;	
+}
+
+.tooltip.information .lp_cont .carnum.over li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.tooltip.information .lp_cont .carnum {
+	width:278px; 
+	max-height:100px; 
+	overflow-y:auto; 
+	padding-left:10px;
+}
+
+.tooltip.information .lp_cont .carnum:after {
+	content:""; 
+	display:block; 
+	clear:both;
+}
+
+.tooltip.information .lp_cont .carnum li {
+	float:left; 
+	width:115px;
+}
+
+.tooltip.information .lp_cont .carnum.over {
+	width:240px;
+}
+
+.tooltip.information .lp_cont .carnum.over li {
+	float:none; 
+	width:auto;
+}
+
+.tooltip.information .edge_cen_tb {
+	position:relative;
+	bottom: -6px;
+	left:50%;
+	width:9px;
+	height:6px;
+	margin:0 0 0 -4px;
+	background:url(/resources/images/maps/bg_layer_edge_tb.png) no-repeat 0 0;
+	font-size:0
+}
+
+.tooltip.information.layerpopup .lp_cont .hvbtn li {
+	padding-left:10px; 
+	background:none;
+}
+
+.tooltip.information.layerpopup .lp_cont .hvbtn li input.snum {
+	width:30px;
+	height:16px; 
+	line-height:16px; 
+	margin-left:5px; 
+	padding-left:5px; 
+	border-radius:4px; 
+	border:solid 1px #d3d3d3;
+}
+
+.tooltip.information.layerpopup .lp_cont .hvbtn li input.snum[readonly=readonly] {
+	background:#efefef;
+}
+
+.tooltip.information.layerpopup .lp_cont .hlp {
+	margin-bottom:10px; 
+	padding:10px 10px 10px 30px; 
+	font-size:12px; 
+	background:#f5f5f5 url(/resources/images/maps/bg_button.png) 10px -589px no-repeat;
+}
+
+
+.control_wrap {position:absolute; top:10px; right:20px;}
+.control_wrap .noted_wrap {height:30px; line-height:30px; padding:0 6px; font-size:14px; background:#fff; *zoom:1;}
+.control_wrap .noted_wrap:after {content:""; clear:both; display:block;}
+.control_wrap .noted_wrap > span {font-size:12px; color:#a0a0a0;}
+.control_wrap .noted_wrap > span .em {color:#000;}
+.control_wrap .noted_wrap a {float:right; display:inline-block; width:34px; height:20px; margin-top:5px; background:url(/resources/images/maps/btn_file.png) 100% 0 no-repeat; text-indent:-9999px;}
+.control_wrap .noted_wrap a + a {width:41px; margin-right:5px; background-position:0 0;}
+.control_wrap .control_box {*zoom:1;}
+.control_wrap .control_box:after {content:""; clear:both; display:block;}
+.control_wrap .control_box dl {float:left; width:140px; font-size:13px; *zoom:1;}
+.control_wrap .control_box dl + dl {margin-left:20px;}
+.control_wrap .control_box dl:after {content:""; display:block; clear:both;}
+.control_wrap .control_box dl dt {float:left; width:34px; height:30px; line-height:30px; padding-left:11px; font-weight:bold; background:url(/resources/images/maps/bg_button.png) 0 -788px no-repeat; color:#000;}
+.control_wrap .control_box dl dd select {width:95px; height:30px; border-radius:4px; border:solid 1px #9aa5b8; background:#FFFFFF url(/resources/images/common/bullet_board.png) 100% -543px no-repeat; background:none\0; background-color:#fff\0;}
+
+.control_wrap .control_box .btn-down  {height: 28px; line-height: 28px; vertical-align: middle; padding: 0 14px; border-radius: 2px; border: solid 1px #9aa5b8; color: #666666; background: #f1f1f1; display:inline-block; font-size:14px; margin-left:5px;}
+
+/* 2016-06-10 차량 상세보기 툴팁 : 경로보기 버튼 위치 조정 요청에 따른 CSS 수정/분리 (하단에서 상단으로 이동)*/
+#thingdetail.tooltip.information .lp_header h3 {
+	float: left;
+}
+
+#thingdetail.tooltip.information .lp_header .traceBtn {
+	width: 90px;
+	background: #eeeeee url(/resources/images/maps/icon_lyr.png) 76px -141px no-repeat;
+	margin-right: 25px;
+	float: right;
+	margin-top: 9px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #ececec;
+	border-radius: 5px;
+	border: 1px solid gray;
+	font-size: 14px;
+	box-shadow: 1px 1px 2px gray;
+}
+
+
+#thingdetail.tooltip.information .lp_header .cmdBtn {
+	width: 90px;
+	background: #eeeeee url(/resources/images/maps/icon_lyr.png) 76px -141px no-repeat;
+	margin-right: 25px;
+	float: right;
+	margin-top: 9px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #ececec;
+	border-radius: 5px;
+	border: 1px solid gray;
+	font-size: 14px;
+	box-shadow: 1px 1px 2px gray;
+}

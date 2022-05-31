@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "ol/*": ["node_modules/ol/src/*"]
+    }
+  },
+  "include": [
+    "**/*.js"
+  ]
+}
